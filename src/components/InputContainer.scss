@@ -1,3 +1,28 @@
 .input__container {
-    
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background: #fff;
+    border-radius: 50px;
+    justify-content: space-between;
+
+    input[type="text"] {
+        border: none;
+        outline: none;
+        font-size: 24px;
+        margin-left: 20px;
+        
+        &::placeholder {
+            color: #bab8c0;
+        }
+
+        &.input-visible {
+            // width: 100%;
+        }
+    }
+}
+
+.icon {
+    padding: 20px;
+    color: #fff;
 }

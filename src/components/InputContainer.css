@@ -1,1 +1,43 @@
-/* No CSS *//*# sourceMappingURL=InputContainer.css.map */
+.input__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background: #fff;
+  border-radius: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.input__container input[type="text"] {
+  border: none;
+  outline: none;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.input__container input[type="text"]::-webkit-input-placeholder {
+  color: #bab8c0;
+}
+
+.input__container input[type="text"]:-ms-input-placeholder {
+  color: #bab8c0;
+}
+
+.input__container input[type="text"]::-ms-input-placeholder {
+  color: #bab8c0;
+}
+
+.input__container input[type="text"]::placeholder {
+  color: #bab8c0;
+}
+
+.icon {
+  padding: 20px;
+  color: #fff;
+}
+/*# sourceMappingURL=InputContainer.css.map */

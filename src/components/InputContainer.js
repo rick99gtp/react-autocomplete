@@ -1,10 +1,18 @@
 import './InputContainer.css';
+import IconContainer from './IconContainer';
+import { useState } from 'react';
 
 const InputContainer = () => {
+    const [visible, setVisible] = useState(false);
+
+    const handleClick = () => {
+        setVisible(!visible);
+    };
+
     return (
         <div className='input__container'>
-            <input type="text" placeholder="Type something..." />
-            
+            <input className={`${visible ? 'input-visible' : ''}`} type="text" placeholder="Type something..." />
+            <IconContainer changeVisible={handleClick} />
         </div>
     )
 }
