@@ -18,6 +18,17 @@
   outline: none;
   font-size: 24px;
   margin-left: 20px;
+  opacity: 0;
+  display: none;
+}
+
+.input__container input[type="text"].display-input {
+  display: block;
+}
+
+.input__container input[type="text"].input-opacity {
+  -webkit-animation: showInput .4s ease-in-out forwards;
+          animation: showInput .4s ease-in-out forwards;
 }
 
 .input__container input[type="text"]::-webkit-input-placeholder {
@@ -39,5 +50,23 @@
 .icon {
   padding: 20px;
   color: #fff;
+}
+
+@-webkit-keyframes showInput {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showInput {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=InputContainer.css.map */

@@ -11,6 +11,16 @@
         outline: none;
         font-size: 24px;
         margin-left: 20px;
+        opacity: 0;
+        display: none;
+
+        &.display-input {
+            display: block;
+        }
+
+        &.input-opacity {
+            animation: showInput .4s ease-in-out forwards;
+        }
         
         &::placeholder {
             color: #bab8c0;
@@ -21,4 +31,14 @@
 .icon {
     padding: 20px;
     color: #fff;
+}
+
+@keyframes showInput {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
