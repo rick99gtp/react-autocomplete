@@ -27,8 +27,8 @@
 }
 
 .full-rotate {
-  -webkit-animation: fullRotate .5s ease-in-out forwards;
-          animation: fullRotate .5s ease-in-out forwards;
+  -webkit-animation: fullRotate .4s ease-in-out forwards;
+          animation: fullRotate .4s ease-in-out forwards;
 }
 
 .hide-icon {

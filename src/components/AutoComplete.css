@@ -2,5 +2,12 @@
   background: #fff;
   border-radius: 50px;
   padding: 10px;
+  width: 85px;
+  -webkit-transition: width 0.3s cubic-bezier(1, 0.01, 0.84, 0.23) 0.9s;
+  transition: width 0.3s cubic-bezier(1, 0.01, 0.84, 0.23) 0.9s;
+}
+
+.autocomplete-width {
+  width: 400px;
 }
 /*# sourceMappingURL=AutoComplete.css.map */

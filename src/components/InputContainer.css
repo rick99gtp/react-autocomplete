@@ -8,9 +8,9 @@
   color: #fff;
   background: #fff;
   border-radius: 50px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .input__container input[type="text"] {
