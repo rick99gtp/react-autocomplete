@@ -33,24 +33,18 @@
 
 .input__container input[type="text"]::-webkit-input-placeholder {
   color: #bab8c0;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
 }
 
 .input__container input[type="text"]:-ms-input-placeholder {
   color: #bab8c0;
-  transform: translateY(100%);
 }
 
 .input__container input[type="text"]::-ms-input-placeholder {
   color: #bab8c0;
-  transform: translateY(100%);
 }
 
 .input__container input[type="text"]::placeholder {
   color: #bab8c0;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
 }
 
 .icon {
