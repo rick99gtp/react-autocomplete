@@ -1,16 +1,125 @@
 .icon__container {
+  position: relative;
+  width: 75px;
+  height: 75px;
   background: #11111b;
   border-radius: 50%;
   padding: 5px;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.icon__container .icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.add-animation {
+  -webkit-animation: btnPush .4s ease-in-out;
+          animation: btnPush .4s ease-in-out;
+}
+
+.short-rotate {
+  -webkit-animation: shortRotate .4s ease-in-out forwards;
+          animation: shortRotate .4s ease-in-out forwards;
+}
+
+.full-rotate {
+  -webkit-animation: fullRotate .5s ease-in-out forwards;
+          animation: fullRotate .5s ease-in-out forwards;
+}
+
+.hide-icon {
+  -webkit-animation: hideIcon .5s ease-in-out forwards;
+          animation: hideIcon .5s ease-in-out forwards;
+}
+
+.show-icon {
+  -webkit-animation: showIcon .5s ease-in-out forwards;
+          animation: showIcon .5s ease-in-out forwards;
+}
+
+.times-icon {
+  opacity: 0;
+}
+
+@-webkit-keyframes btnPush {
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@keyframes btnPush {
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@-webkit-keyframes shortRotate {
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@keyframes shortRotate {
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@-webkit-keyframes fullRotate {
+  100% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}
+
+@keyframes fullRotate {
+  100% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}
+
+@-webkit-keyframes hideIcon {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hideIcon {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes showIcon {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showIcon {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=IconContainer.css.map */
