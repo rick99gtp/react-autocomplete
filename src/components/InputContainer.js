@@ -21,7 +21,7 @@ const InputContainer = ({visible, changeVisible, inputVisible}) => {
 
     return (
         <div className='input__container'>
-            { inputVisible ? <input className={`${displayInput ? 'display-input' : ''} ${inputOpacity ? 'input-opacity' : ''}`} type="text" placeholder="Type something..." /> : null }
+            { inputVisible ? <input className={`${displayInput ? 'display-input' : ''} ${inputOpacity ? 'input-opacity' : ''}`} type="text" ></input> : null }
             <IconContainer visible={visible} changeVisible={changeVisible} />
         </div>
     )
